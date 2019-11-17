@@ -1,5 +1,8 @@
 jQuery(document).ready(function () {
-    let razem = jQuery(".razem-cena");
+	let razem = jQuery(".razem-cena");
+
+    razem.on("click", function (event) {
+	event.preventDefault()
 	let naczynia = jQuery("input[name='naczynia-cena']").val();
     let podlogi = jQuery("input[name='podlogi-cena']").val();
     let dywany = jQuery("input[name='dywany-cena']").val();
@@ -7,12 +10,8 @@ jQuery(document).ready(function () {
     let lazienka = jQuery("input[name='lazienka-cena']").val();
     let okna = jQuery("input[name='okna-cena']").val();
     let inne = jQuery("input[name='inne-cena']").val();
+		
 
-    razem.on("click", function (event) {
-
-
-
-      	event.preventDefault()
 		let naczyniaVal = 0
 		let podlogiVal = 0
 		let dywanyVal = 0
@@ -44,7 +43,6 @@ jQuery(document).ready(function () {
 		}
 
         let sum = naczyniaVal + podlogiVal + dywanyVal + kuchniaVal + lazienkaVal + oknaVal + inneVal;
-
         razem.text(`${sum} zł`)
     })
 })
