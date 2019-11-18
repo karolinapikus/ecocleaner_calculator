@@ -9,7 +9,7 @@
 	font-family: "Montserrat"
 
 }
-#ecocleaner_form.form-row {
+#ecocleaner_form .form-row {
 	border-bottom: 2px solid #015155;
 	padding: 5px;
 	display: flex;
@@ -18,7 +18,7 @@
 }
 
 
-#ecocleaner_form.send {
+#ecocleaner_form .send {
 	border: none;
 	font-size: 20px;
 	color: #015155;
@@ -27,7 +27,7 @@
 
 }
 
-#ecocleaner_form.form-row div {
+#ecocleaner_form .form-row div {
     color: #015155;
     font-family: 'Montserrat';
     font-size: 20px;
@@ -58,7 +58,7 @@
 	color: white;
 }
 
-#ecocleaner_form.razem-cena {
+#ecocleaner_form .razem-cena {
     font-size: 20px;
     font-family: "Montserrat";
     border: none;
